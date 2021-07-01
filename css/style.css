@@ -1,0 +1,192 @@
+/* Global */
+
+body { font-family: 'Zen Dots', cursive;}
+
+a { color: #fff;}
+
+a:hover { text-decoration: none;}
+
+/* End Global */
+
+header {
+    background-color: #d01317 ;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+
+.navbar .navbar-brand {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-brand span { color: 	#FFD700}
+
+.navbar .navbar-brand:hover { color: #fff;}
+
+.navbar .navbar-nav .nav-item { margin-right: 10px;}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover { color: #FFD700}
+
+.navbar-toggler {
+    background-color: #fff;
+    line-height: 1.4;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.navbar-toggler:focus { outline: none;}
+
+.navbar-toggler i {
+    font-size: 28px;
+    color: #FFD700;
+}
+
+@media screen and (max-width:991px) {
+
+    .navbar-nav { padding: 25px 0;}
+
+    .navbar-nav {
+        background-color: #000;
+        text-align: center;
+    }
+
+    .navbar-collapse .navbar-nav .nav-item {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link { font-size: 27px;}
+}
+
+@media screen and (max-width:576px) {
+
+    .navbar .navbar-brand { font-size: 28px;}
+
+}
+
+@media screen and (max-width:400px) {
+
+    .navbar .navbar-brand { font-size: 22px;}
+
+    .navbar .navbar-nav .nav-item .nav-link { font-size: 18px;}
+
+    .navbar-toggler{
+        padding: 3px;
+        line-height: 1.4;
+        font-size: 18px;
+    }
+
+    .navbar-toggler i { font-size: 20px}
+
+}
+
+/* Mo Content Styling */
+
+.mo-content {
+    position: relative;
+    z-index: 100000;
+}
+
+ .mo-content h1 {
+     color: #fff;
+     letter-spacing: 1px;
+     font-weight: bold;
+     text-shadow: 0 6px 6px #4e4e4e;
+     line-height: 1.4;
+ }
+
+ .mo-content p {
+     font-size: 17px;
+     color: #f2e9e9;
+     letter-spacing: 1px;
+     font-family: 'Antonio', sans-serif;
+     line-height: 1.8;
+ }
+
+ .mo-content .read-btn {
+    border: 1px solid #fff;
+    position: relative;
+    bottom: 20px;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #FFD700;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.mo-content .read-btn:hover { 
+    color: #d01317;
+    background-color: #fff;
+}
+
+.mo-content .anim-btn {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.mo-content .anim-btn::before {
+    content: "";
+    width: 3px;
+    height: 6px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    opacity: 1;
+    border-radius: 30%;
+    transform: translateX(-50%);
+    animation: wheel 0.5s infinite;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 50px;
+    }
+}
+
+ .mo-content img { width: 460px;}
